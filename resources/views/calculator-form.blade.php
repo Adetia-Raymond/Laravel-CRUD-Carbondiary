@@ -339,7 +339,15 @@
                 }
                 break;
             case 'motor':
-                emissionFactor = 0.10;
+                if (fuelType === 'bensin') {
+                    emissionFactor = 0.13;
+                } else if (fuelType === 'solar') {
+                    emissionFactor = 0.11;
+                } else if (fuelType === 'listrik') {
+                    emissionFactor = 0.02;
+                } else {
+                    emissionFactor = 0;
+                }
                 break;
             case 'sepeda':
                 emissionFactor = 0.00;

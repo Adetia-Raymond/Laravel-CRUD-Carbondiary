@@ -6,8 +6,9 @@ use App\Http\Controllers\KalkulatorController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

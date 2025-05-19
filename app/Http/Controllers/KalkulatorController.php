@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\EmissionRecord;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth; 
+use Illuminate\View\View;
 
 
 class KalkulatorController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request): View
     {
         $date = $request->query('date') ? Carbon::parse($request->query('date')) : Carbon::today();
         

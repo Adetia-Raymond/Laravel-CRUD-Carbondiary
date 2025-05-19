@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,6 +80,24 @@
             border: none;
             cursor: pointer;
         }
+
+        .logo-image {
+            width: 160px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 991px) {
+
+            .logo {
+                font-size: 26px;
+            }
+
+            .logo-image {
+            width: 140px;
+            height: 70px;
+            }
+        }
     </style>
 
 </head>
@@ -91,16 +110,17 @@
                     <div class="logo-container d-flex align-items-center gap-2">
                         <h1 class="logo m-0 fw-bold">CARBON<br>DIARY</h1>
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b2492a8d12883169b2595978c95520536ea837a"
-                            alt="Earth logo with leaves" class="logo-image"
-                            style="width: 160px; height: 80px; object-fit: cover;">
+                            alt="Earth logo with leaves" class="logo-image">
                     </div>
                 </a>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="toggler-container">
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav d-flex align-items-center gap-md-4">
